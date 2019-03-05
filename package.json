@@ -1,0 +1,46 @@
+{
+  "name": "ktb-editor-utils",
+  "version": "0.1.0",
+  "displayName": "KTB - Editor Utils",
+  "description": "Collection of simple editor utilities for VSCode",
+  "categories": [
+    "Other"
+  ],
+  "keywords": [],
+  "publisher": "KonTrax",
+  "license": "ISC",
+  "author": {
+    "name": "KonTrax",
+    "url": "https://github.com/KonTrax"
+  },
+	"homepage": "https://github.com/KonTrax/vscode-ktb-editor-utils",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/KonTrax/vscode-ktb-editor-utils.git"
+	},
+	"bugs": {
+		"url": "https://github.com/KonTrax/vscode-ktb-editor-utils/issues"
+	},
+  "main": "./out/extension",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@ktb/type-tools": "^0.2.2",
+    "@types/node": "^10.12.29",
+    "typescript": "^3.3.1",
+    "vscode": "^1.1.30"
+  },
+  "engines": {
+    "vscode": "^1.31.1"
+  },
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {}
+}
